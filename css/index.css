@@ -1,0 +1,51 @@
+body{
+	padding: 0;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.try{
+	background-color: black;
+	width: 30px;
+	height: 20px;
+	margin: 100px auto;
+}
+
+.category{
+	background-color: pink;
+
+	border-bottom: 1px gray solid;
+}
+
+.category_name{
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-weight: bold;
+	text-align: center;
+
+	padding: 40px 0;
+
+	cursor: pointer;
+}
+
+.category_prod{
+	display: none;
+
+	list-style: none;
+	padding: 0;
+}
+
+.none{
+	display: block;
+}
+
+.prod{
+	width: 100%;
+	text-align: center; 
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+
+	padding: 30px 0;
+
+}

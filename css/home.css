@@ -1,0 +1,202 @@
+/*Circles*/
+
+.circles{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.circle{
+	display: flex;
+	flex-flow: column;
+	align-self: center;
+}
+
+@media (max-width: 740px){
+	.circle{
+		margin: 40px auto;
+	}
+}
+
+.circle-photo{
+	align-self: center;
+	border-radius: 50%;
+
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+@media (max-width: 740px){
+	.circle-photo{
+		width: 130px;
+		height: 130px;
+	}
+}
+
+@media (min-width: 741px){
+	.circle-photo{
+		width: 200px;
+		height: 200px;
+	}
+}
+
+.circle-photo{
+	background-size: 50%;
+}
+
+.circle_ball .circle-photo{
+	background-color: #E28F90;
+	background-image: url('../img/home/circles/ball.png');
+}
+
+.circle_heart .circle-photo{
+	background-color: #82DDD7;
+	background-image: url('../img/home/circles/heart.png');
+}
+
+.circle_something .circle-photo{
+	background-color: #D5DA8C;
+	background-image: url('../img/home/circles/star.png');
+
+}
+
+.circle-text{
+	width: 200px; 
+
+	text-align: center;
+	letter-spacing: 0.05em;
+	font-size: 20px;
+	font-weight: bold;
+
+	margin-top: 20px;
+}
+
+/*Carousel*/
+
+.carousel{
+	display: flex;
+	flex-direction: column;
+
+	margin: 40px auto;
+}
+
+.carousel_main{
+	display: flex;
+}
+
+.slides{
+	flex: 8;
+}
+
+.prev, .next{
+	cursor: pointer;
+	align-self: center;
+	font-size: 40px;
+	padding: 20px;
+
+	transition: 0.5s ease;
+}
+
+@media (min-width: 741px){
+	.prev, .next{
+		font-size: 40px;
+		padding: 20px;
+	}
+}
+
+@media (max-width: 740px){
+	.prev, .next{
+		font-size: 25px;
+		padding: 10px;
+	}
+}
+
+.prev{
+	border-radius: 5px 0 0 5px;
+}
+
+.next{
+	right: 0;
+	border-radius: 0 5px 5px 0;
+}
+
+.prev:hover, .next:hover{
+	background-color: #C8C8C8;
+	transition: 0.5s ease; 
+}
+
+.slide{
+	display: flex;
+}
+
+@media (max-width: 740px){
+	.slide{
+		flex-flow: column-reverse;
+	}	
+}
+
+.slide_text{
+	flex: 1;
+
+	background-color: #F7E4E7;
+}
+
+.slide_text-header{
+	font-weight: bold;
+	font-size: 20px;
+
+	margin: 20px 20px;
+}
+
+.slide_text-main{
+	font-size: 16px;
+	
+	overflow: auto;
+	max-height: 150px;
+
+	margin: 10px 10px;
+}
+
+.slide_img{
+	flex: 2;
+	width: 100%;
+}
+
+.carousel_dots{
+	margin: 5px auto;
+}
+
+
+.dot{
+	cursor: pointer;
+	width: 10px;
+	height: 10px;
+	margin: 0 1px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease; 
+}
+
+.active, .dot:hover{
+	background-color: #717171;
+}
+
+.fade{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade; 
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+	from{opacity: 0.4}
+	to{opacity: 1}
+}
+
+@keyframes fade{
+	from{opacity: 0.4}
+	to{opacity: 1}
+}
+
+

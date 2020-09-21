@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DotsOnCots</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/product.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<img class="logo_img" src="./img/logo.png">
+				<div class="logo_name">
+					Dots on cots
+				</div>
+				<div class="logo_sub-name">
+					Милі речі для твоєї малечі
+				</div>
+			</div>
+
+			<button class="menu_button" type="button">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+
+			<ul class="menu_list menu_list-inactive menu_list-hidden">
+				<li class="menu_list-elem"><a class="menu_list-href" href="home.html">Головна</a></li>
+				<li class="menu_list-elem"><a class="menu_list-href" href="product.html">Товар</a></li>
+				<li class="menu_list-elem"><a class="menu_list-href" href="about.html">Про нас</a> </li>
+			</ul>
+		</div>
+		
+	</header>
+
+	<section>
+		<div class="container">
+			<div class="categories">
+				<div class="category">
+					<div class="category_name">
+						Darova
+					</div>
+					<ul class="category_prod">
+						<li class="prod"><a href="">1prod</a></li>
+						<li class="prod"><a href="">2prod</a></li>
+						<li class="prod"><a href="">3prod</a></li>
+						<li class="prod"><a href="">4prod</a></li>
+					</ul>
+				</div>
+				<div class="category">
+					<div class="category_name">
+						Kak ti
+					</div>
+					<ul class="category_prod">
+						<li class="prod"><a href="">dadfdm,utyre</a></li>
+						<li class="prod"><a href="">dadfdm,utyre</a></li>
+						<li class="prod"><a href="">dadfdm,utyre</a></li>
+						<li class="prod"><a href="">dadfdm,utyre</a></li>
+					</ul>
+				</div>
+				<div class="category">
+					<div class="category_name">
+						Poka
+					</div>
+					<ul class="category_prod">
+						<li class="prod"><a href="">sdfbge</a></li>
+						<li class="prod"><a href="">sdfsd</a></li>
+						<li class="prod"><a href="">sdfsd</a></li>
+						<li class="prod"><a href="">dsf</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="footer_elem">
+				<h3>Контакти</h3>
+	            <a class="footer_href" href="mail:company@mail.com">company@mail.com</a>
+			</div>
+			<span class="footer_border"></span>
+			<div class="footer_elem">
+				<h3>Соціальні мережі</h3>
+				<a class="insta_href" href="#"><img class="insta_img" src="./img/insta-logo.svg"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+<script src="scripts/menuButton.js"></script>
+<script>
+	let cat = document.querySelectorAll('.category');
+	cat.forEach(function(elem) {
+		elem.querySelector('.category_name').addEventListener('click', ()=>{
+			let prod = elem.querySelector('.category_prod');
+			prod.classList.toggle('none')
+		})
+	});
+</script>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>DotsOnCots</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<img class="logo_img" src="./img/logo.png">
+				<div class="logo_name">
+					Dots on cots
+				</div>
+				<div class="logo_sub-name">
+					Милі речі для твоєї малечі
+				</div>
+			</div>
+
+			<button class="menu_button" type="button">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+
+			<ul class="menu_list menu_list-inactive menu_list-hidden">
+				<li class="menu_list-elem"><a class="menu_list-href" href="home.html">Головна</a></li>
+				<li class="menu_list-elem"><a class="menu_list-href" href="product.html">Товар</a></li>
+				<li class="menu_list-elem"><a class="menu_list-href" href="about.html">Про нас</a> </li>
+			</ul>
+		</div>
+		
+	</header>
+	
+	<section>
+		<div class="container">
+			<div class="circles">
+				<div class="circle circle_ball">
+					<div class="circle-photo"></div>
+					<div class="circle-text">Тільки натуральні тканини</div>
+				</div>
+				<div class="circle circle_heart">
+					<div class="circle-photo"></div>
+					<div class="circle-text">100% любові у кожному виробі</div>
+				</div>
+				<div class="circle circle_something">
+					<div class="circle-photo"></div>
+					<div class="circle-text">Унікальний дизайн</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="carousel">
+				<div class="carousel_main">
+					<div class="prev" onclick="plusSlide(-1)">
+						&#10094
+					</div>
+					<div class="slides fade">
+						<div class="slide fade">
+							<div class="slide_text">
+								<div class="slide_text-header">
+									We`ve opened
+								</div>
+								<div class="slide_text-main">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, velit, molestias.
+								</div>
+							</div>
+							<img src="img/home/carousel/1.jpg" alt="" class="slide_img">
+						</div>
+						<div class="slide fade">
+							<div class="slide_text">
+								<div class="slide_text-header">
+									We`ve opened
+								</div>
+								<div class="slide_text-main">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ipsum inventore error modi facilis fugiat omnis, quidem eos nulla aspernatur ea quod, laboriosam. Natus illum nemo in voluptate nostrum quidem.
+								</div> 
+							</div>
+							<img src="img/home/carousel/2.jpg" alt="" class="slide_img">
+						</div>
+						<div class="slide fade">
+							<div class="slide_text">
+								<div class="slide_text-header">
+									We`ve opened
+								</div>
+								<div class="slide_text-main">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, velit, molestias.
+								</div>
+							</div>
+							<img src="img/home/carousel/3.jpg" alt="" class="slide_img">
+						</div>	
+					</div>
+					<div class="next" onclick="plusSlide(1)">
+						&#10095
+					</div>
+				</div>
+				<div class="carousel_dots">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+				</div>
+			</div>	
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="footer_elem">
+				<h3>Контакти</h3>
+	            <a class="footer_href" href="mail:company@mail.com">company@mail.com</a>
+			</div>
+			<span class="footer_border"></span>
+			<div class="footer_elem">
+				<h3>Соціальні мережі</h3>
+				<a class="insta_href" href="#"><img class="insta_img" src="./img/insta-logo.svg"></a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+<script src="scripts/menuButton.js"></script>
+<script src="scripts/caroulesSlider.js"></script>
+</html>
